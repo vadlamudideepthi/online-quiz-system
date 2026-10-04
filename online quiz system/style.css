@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Header */
+
+header {
+    background-color: #4b2e83;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+
+    background: linear-gradient(
+        rgba(75, 46, 131, 0.9),
+        rgba(100, 70, 160, 0.9)
+    );
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 28px;
+    background-color: #ffd166;
+    color: #333;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* Quiz Section */
+
+.quiz-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 35px;
+}
+
+.quiz-section h2 {
+    text-align: center;
+    color: #4b2e83;
+    font-size: 32px;
+}
+
+.subtitle {
+    text-align: center;
+    margin: 10px 0 30px;
+    color: #666;
+}
+
+/* Question */
+
+.question {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.question h3 {
+    color: #333;
+    margin-bottom: 18px;
+}
+
+.question label {
+    display: block;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #f1eff7;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.question label:hover {
+    background-color: #e2dcf2;
+}
+
+.question input {
+    margin-right: 10px;
+}
+
+/* Submit Button */
+
+.submit-btn {
+    display: block;
+    margin: 30px auto;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4b2e83;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #351f60;
+}
+
+/* About */
+
+.about {
+    background-color: white;
+    text-align: center;
+    padding: 55px 8%;
+}
+
+.about h2,
+.contact h2 {
+    color: #4b2e83;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+/* Contact */
+
+.contact {
+    text-align: center;
+    padding: 50px 8%;
+    background-color: #eeeaf5;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .quiz-section {
+        padding: 20px;
+    }
+
+    .question {
+        padding: 20px;
+    }
+}
+
